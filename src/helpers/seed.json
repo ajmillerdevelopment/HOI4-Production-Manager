@@ -1,0 +1,14 @@
+{
+    "tags": [
+        {
+            "name": "usa",
+            "longName": "United States",
+            "flagUrl": "USA_democratic.png"
+        },
+        {
+            "name": "eng",
+            "longName": "United Kingdom",
+            "flagUrl": "ENG_democratic.png"
+        }
+    ]
+}
