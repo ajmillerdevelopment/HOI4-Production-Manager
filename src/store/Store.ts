@@ -10,6 +10,7 @@ class Store {
         }
     }
     tags: object[] = [];
+    units: object[] = [];
     templates: object[] = [];
     equipment: object[] = [];
 };
