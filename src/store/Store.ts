@@ -3,15 +3,14 @@ import * as seed from "../helpers/seed.json"
 class Store {
     constructor(useVanilla: boolean) {
         if (useVanilla) {
-            const tags = seed.tags;
-            tags.forEach((tag) => {
-                this.tags.push(tag)
-            })
+            this.tags = seed.tags;
+            this.units = seed.units;
+            this.equipments = seed.equipments
         }
     }
     tags: object[] = [];
     units: object[] = [];
     templates: object[] = [];
-    equipment: object[] = [];
+    equipments: object[] = [];
 };
 export default Store
