@@ -15,4 +15,8 @@
         height: 2px;
         background-color: white;
     }
+    .tag-button {
+        height: 86px;
+        width: 120px;
+    }
 }
