@@ -10,5 +10,21 @@
             "longName": "United Kingdom",
             "flagUrl": "ENG_democratic.png"
         }
+    ],
+    "units": [
+        {
+            "name": "infantry"
+        },
+        {
+            "name": "cavalry"
+        }
+    ],
+    "equipments": [
+        {
+            "name": "infantryEquipment"
+        },
+        {
+            "name": "supportEquipment"
+        }
     ]
 }
