@@ -7,4 +7,7 @@
         height: 60px;
         width: 60px;
     }
+    .flag-image {
+        max-height: 30px;
+    }
 }
