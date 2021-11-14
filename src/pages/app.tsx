@@ -5,9 +5,29 @@ import TagTabBar from "../components/TagTabBar";
 
 const App = () => {
     const [tags, setTags] = useState([]);
+    const [tagDropdown, setTagDropdown] = useState(false);
     const store = new Store(true);
     const toggleDropdown = () => {
-        alert("toggle dropdown");
+        const dropDownContainer = document.getElementById(
+            "tagDropdownContainer"
+        );
+        if (tagDropdown) {
+            dropDownContainer?.classList.add("max-h-0", "overflow-hidden");
+            dropDownContainer?.classList.remove(
+                "max-h-full",
+                "overflow-auto",
+                "border-2"
+            );
+            setTagDropdown(false);
+        } else {
+            dropDownContainer?.classList.remove("max-h-0", "overflow-hidden");
+            dropDownContainer?.classList.add(
+                "max-h-full",
+                "overflow-auto",
+                "border-2"
+            );
+            setTagDropdown(true);
+        }
     };
     return (
         <div id="root" className="bg-black h-screen w-full fixed">

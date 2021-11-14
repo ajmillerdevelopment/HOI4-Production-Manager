@@ -10,6 +10,7 @@ const MainPanel = (props: any) => {
     setMessage();
     return (
         <main className="bg-gray-900 m-0 w-full h-screen fixed">
+            <div className="bar fixed" />
             <TagDropdown tags={props.store.tags} />
             <p
                 id="tagMessage"
