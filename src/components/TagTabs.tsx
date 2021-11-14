@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TagList = () => {
+const TagList = (props: any) => {
     return(
         <h2>TagList</h2>
     )
