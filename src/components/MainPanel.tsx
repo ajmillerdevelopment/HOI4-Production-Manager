@@ -1,9 +1,10 @@
 import React from "react";
+import vm from "../vm/VM";
 import TagDropdown from "./TagDropdown";
 
 const MainPanel = (props: any) => {
     const setMessage = () => {
-        if (!props.displayMessage) {
+        if (vm.store.activeTags.length < 1) {
             document.getElementById("tagMessage")?.setAttribute("hidden", "");
         }
     };
@@ -11,7 +12,7 @@ const MainPanel = (props: any) => {
     return (
         <main className="bg-gray-900 m-0 w-full h-screen fixed">
             <div className="bar fixed" />
-            <TagDropdown tags={props.store.tags} />
+            <TagDropdown />
             <p
                 id="tagMessage"
                 className="font-body text-white text-2xl text-center"

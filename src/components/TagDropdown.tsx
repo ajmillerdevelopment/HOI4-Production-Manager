@@ -1,11 +1,18 @@
 import React, { useState } from "react";
+import VM from "../vm/VM";
 
-const TagDropdown = (props: any) => {
-    const tags = props.tags.map((tag: any) => {
+const TagDropdown = () => {
+    const tags = VM.store.tags.map((tag: any) => {
         if (!tag.active) {
             const url = `/images/flags/${tag.flagUrl}`;
             return (
-                <button className="flex flex-row w-full hover:bg-gray-600 p-4">
+                <button
+                    className="flex flex-row w-full hover:bg-gray-600 p-4"
+                    onClick={() => {
+                        VM.addTag(tag.name);
+                        VM.ui.toggleDropdown(true);
+                    }}
+                >
                     <img
                         className="flag-image border border-gray-200"
                         src={url}
