@@ -1,30 +1,30 @@
 {
-    "tags": [
-        {
-            "name": "usa",
-            "longName": "United States",
-            "flagUrl": "USA_democratic.png"
-        },
-        {
-            "name": "eng",
-            "longName": "United Kingdom",
-            "flagUrl": "ENG_democratic.png"
-        }
-    ],
-    "units": [
-        {
-            "name": "infantry"
-        },
-        {
-            "name": "cavalry"
-        }
-    ],
-    "equipments": [
-        {
-            "name": "infantryEquipment"
-        },
-        {
-            "name": "supportEquipment"
-        }
-    ]
+  "tags": [
+    {
+      "name": "usa",
+      "longName": "United States",
+      "flagUrl": "USA_democratic.png"
+    },
+    {
+      "name": "eng",
+      "longName": "United Kingdom",
+      "flagUrl": "ENG_democratic.png"
+    }
+  ],
+  "units": [
+    {
+      "name": "infantry"
+    },
+    {
+      "name": "cavalry"
+    }
+  ],
+  "equipments": [
+    {
+      "name": "infantryEquipment"
+    },
+    {
+      "name": "supportEquipment"
+    }
+  ]
 }
