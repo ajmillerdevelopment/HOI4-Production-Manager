@@ -12,7 +12,7 @@ const MainPanel = (props: any) => {
     return (
         <main className="bg-gray-900 m-0 w-full h-screen fixed">
             <div className="bar fixed" />
-            <TagDropdown />
+            <TagDropdown selectTag={props.selectTag} />
             <p
                 id="tagMessage"
                 className="font-body text-white text-2xl text-center"

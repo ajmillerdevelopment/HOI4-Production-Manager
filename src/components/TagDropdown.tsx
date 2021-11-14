@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import VM from "../vm/VM";
 
-const TagDropdown = () => {
+const TagDropdown = (props: any) => {
     const tags = VM.store.tags.map((tag: any) => {
         if (!tag.active) {
             const url = `/images/flags/${tag.flagUrl}`;
@@ -11,6 +11,7 @@ const TagDropdown = () => {
                     onClick={() => {
                         VM.addTag(tag.name);
                         VM.ui.toggleDropdown(true);
+                        props.selectTag(tag);
                     }}
                 >
                     <img

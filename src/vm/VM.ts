@@ -2,7 +2,15 @@ import Store from "../store/Store";
 
 const vm = {
     store: new Store(true),
-    addTag: (tagName: string) => {},
+    addTag: (tagName: string) => {
+        console.log(`add tag ${tagName}`);
+        vm.store.tags.forEach((tag: any) => {
+            if (tag.name === tagName) {
+                tag.active = true;
+                vm.store.activeTags.push(tag);
+            }
+        });
+    },
     ui: {
         toggleDropdown: (tagDropdown: boolean) => {
             console.log("toggle dropdown");
